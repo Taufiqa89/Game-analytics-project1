@@ -8,7 +8,7 @@ import mysql.connector
 connection= mysql.connector.connect(
  host= "localhost",
  user= "root",
- password="Coffers@06",
+ password=" ",
  database="tennis_data"
 )
 
@@ -269,4 +269,5 @@ if selected_query:
     df = pd.DataFrame(data, columns=columns)
 
 st.markdown(f"<h3 style='color: white;'>{selected_query}</h3>", unsafe_allow_html=True)
+
 st.dataframe(df, hide_index=True)
